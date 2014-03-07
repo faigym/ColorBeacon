@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5051" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Acj-NC-Byc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="5ZZ-FM-yzR">
+            <objects>
+                <viewController id="Acj-NC-Byc" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yAd-KA-JJb"/>
+                        <viewControllerLayoutGuide type="bottom" id="XyB-Df-bMg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CMD-cI-pIp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 - Red Beacon RSSI:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvN-F6-d1f">
+                                <rect key="frame" x="20" y="510" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Zcy-0V-NYy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 - Green Beacon RSSI:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d5-Py-1ZG">
+                                <rect key="frame" x="20" y="539" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="yuH-Ao-Rz4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAV-2d-3zF">
+                                <rect key="frame" x="228" y="510" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gu-bH-ZZk">
+                                <rect key="frame" x="228" y="539" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XyB-Df-bMg" firstAttribute="top" secondItem="7d5-Py-1ZG" secondAttribute="bottom" constant="20" symbolic="YES" id="7Vc-3i-XmM"/>
+                            <constraint firstItem="wAV-2d-3zF" firstAttribute="leading" secondItem="kvN-F6-d1f" secondAttribute="trailing" constant="8" symbolic="YES" id="HS1-cx-Tjv"/>
+                            <constraint firstItem="7gu-bH-ZZk" firstAttribute="leading" secondItem="7d5-Py-1ZG" secondAttribute="trailing" constant="8" symbolic="YES" id="X1R-bv-ZJM"/>
+                            <constraint firstItem="7d5-Py-1ZG" firstAttribute="top" secondItem="kvN-F6-d1f" secondAttribute="bottom" constant="8" symbolic="YES" id="ZTS-xB-YkC"/>
+                            <constraint firstItem="7d5-Py-1ZG" firstAttribute="leading" secondItem="CMD-cI-pIp" secondAttribute="leading" constant="20" symbolic="YES" id="daS-2E-6ek"/>
+                            <constraint firstItem="wAV-2d-3zF" firstAttribute="centerY" secondItem="kvN-F6-d1f" secondAttribute="centerY" id="e1W-eU-Tel"/>
+                            <constraint firstItem="kvN-F6-d1f" firstAttribute="leading" secondItem="CMD-cI-pIp" secondAttribute="leading" constant="20" symbolic="YES" id="f98-gV-w0D"/>
+                            <constraint firstItem="7d5-Py-1ZG" firstAttribute="centerY" secondItem="7gu-bH-ZZk" secondAttribute="centerY" id="fji-vP-olz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beaconOneRSSILabel" destination="wAV-2d-3zF" id="Z5b-fr-lmr"/>
+                        <outlet property="beaconTwoRSSILabel" destination="7gu-bH-ZZk" id="Kt4-Wq-VT8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMz-Gh-hnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="72"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
