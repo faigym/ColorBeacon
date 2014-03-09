@@ -1,0 +1,10 @@
+PODS:
+  - SimpleAudioPlayer (0.1.2)
+
+DEPENDENCIES:
+  - SimpleAudioPlayer (~> 0.1.2)
+
+SPEC CHECKSUMS:
+  SimpleAudioPlayer: 31af2626060860fdab366522d7bcacb79911352e
+
+COCOAPODS: 0.29.0
