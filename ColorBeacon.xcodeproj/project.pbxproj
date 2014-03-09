@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000FB31F8F614C35AD8A00C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BDCFCCE4B842BDA2F8FE15 /* libPods.a */; };
+		3D6A2F1418CA491600AC0BCC /* kids.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A2F1218CA491600AC0BCC /* kids.mp3 */; };
+		3D6A2F1518CA491600AC0BCC /* lounge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A2F1318CA491600AC0BCC /* lounge.mp3 */; };
 		3DB66B5F18CA2B230073C70C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB66B5E18CA2B230073C70C /* Foundation.framework */; };
 		3DB66B6118CA2B230073C70C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB66B6018CA2B230073C70C /* CoreGraphics.framework */; };
 		3DB66B6318CA2B230073C70C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB66B6218CA2B230073C70C /* UIKit.framework */; };
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D6A2F1218CA491600AC0BCC /* kids.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kids.mp3; sourceTree = "<group>"; };
+		3D6A2F1318CA491600AC0BCC /* lounge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lounge.mp3; sourceTree = "<group>"; };
 		3DB66B5B18CA2B230073C70C /* ColorBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB66B5E18CA2B230073C70C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DB66B6018CA2B230073C70C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +63,8 @@
 		3DB66B9218CA2D010073C70C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		3DB66B9418CA2D830073C70C /* iBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBeaconManager.h; sourceTree = "<group>"; };
 		3DB66B9518CA2D830073C70C /* iBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBeaconManager.m; sourceTree = "<group>"; };
+		459FCB6D901D4634B794424B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A2BDCFCCE4B842BDA2F8FE15 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +75,7 @@
 				3DB66B6118CA2B230073C70C /* CoreGraphics.framework in Frameworks */,
 				3DB66B6318CA2B230073C70C /* UIKit.framework in Frameworks */,
 				3DB66B5F18CA2B230073C70C /* Foundation.framework in Frameworks */,
+				000FB31F8F614C35AD8A00C3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +99,7 @@
 				3DB66B7D18CA2B230073C70C /* ColorBeaconTests */,
 				3DB66B5D18CA2B230073C70C /* Frameworks */,
 				3DB66B5C18CA2B230073C70C /* Products */,
+				459FCB6D901D4634B794424B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +119,7 @@
 				3DB66B6018CA2B230073C70C /* CoreGraphics.framework */,
 				3DB66B6218CA2B230073C70C /* UIKit.framework */,
 				3DB66B7718CA2B230073C70C /* XCTest.framework */,
+				A2BDCFCCE4B842BDA2F8FE15 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +144,8 @@
 		3DB66B6518CA2B230073C70C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D6A2F1218CA491600AC0BCC /* kids.mp3 */,
+				3D6A2F1318CA491600AC0BCC /* lounge.mp3 */,
 				3DB66B6618CA2B230073C70C /* ColorBeacon-Info.plist */,
 				3DB66B6718CA2B230073C70C /* InfoPlist.strings */,
 				3DB66B6A18CA2B230073C70C /* main.m */,
@@ -167,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DB66B8718CA2B230073C70C /* Build configuration list for PBXNativeTarget "ColorBeacon" */;
 			buildPhases = (
+				EA926F40EA5A467FB175093B /* Check Pods Manifest.lock */,
 				3DB66B5718CA2B230073C70C /* Sources */,
 				3DB66B5818CA2B230073C70C /* Frameworks */,
 				3DB66B5918CA2B230073C70C /* Resources */,
+				65A23A237F1C4E378E696A0C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,8 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB66B9018CA2CBD0073C70C /* iPad.storyboard in Resources */,
+				3D6A2F1418CA491600AC0BCC /* kids.mp3 in Resources */,
 				3DB66B6918CA2B230073C70C /* InfoPlist.strings in Resources */,
 				3DB66B8E18CA2C9B0073C70C /* iPhone.storyboard in Resources */,
+				3D6A2F1518CA491600AC0BCC /* lounge.mp3 in Resources */,
 				3DB66B7118CA2B230073C70C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +267,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65A23A237F1C4E378E696A0C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA926F40EA5A467FB175093B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DB66B5718CA2B230073C70C /* Sources */ = {
@@ -374,6 +423,7 @@
 		};
 		3DB66B8818CA2B230073C70C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459FCB6D901D4634B794424B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -389,6 +439,7 @@
 		};
 		3DB66B8918CA2B230073C70C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459FCB6D901D4634B794424B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
